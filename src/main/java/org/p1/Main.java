@@ -10,10 +10,9 @@ public class Main {
 
         Modelo modelo = new Modelo();
 
-        //Vista vista = new Vista(modelo);
+        Vista vista = new Vista(modelo);
 
-        //Controlador controlador = new Controlador(modelo, vista);
-        Controlador controlador = new Controlador();
+        Controlador controlador = new Controlador(modelo, vista);
         controlador.iniciar();
 
     }
