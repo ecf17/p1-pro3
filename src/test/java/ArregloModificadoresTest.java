@@ -28,5 +28,28 @@ public class ArregloModificadoresTest {
         assertEquals(16, segundoResultado);
     }
 
+    @Test
+    void AgregarElementoArreglo(){
+        Modelo modelo = new Modelo();
+        modelo.agregarElemento(10);
+        modelo.agregarElemento(11);
+        modelo.agregarElemento(12);
+
+        int[] resultado = modelo.getArreglo();
+
+        assertEquals(10, resultado[0]);
+        assertEquals(11, resultado[1]);
+        assertEquals(12, resultado[2]);
+    }
+
+    @Test
+    void EliminarUltimoElementoArreglo(){
+        Modelo modelo = new Modelo();
+        modelo.setElemento(99, 111);
+        assertEquals(111, modelo.getElemento(99));
+        modelo.eliminarUltimoElemento();
+        assertEquals(0, modelo.getElemento(99));
+    }
+
 
 }
