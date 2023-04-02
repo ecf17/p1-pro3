@@ -1,2 +1,6 @@
-package org.p1;public class PopupAgregar {
+package org.p1;
+
+import javax.swing.*;
+
+public class PopupAgregar extends JFrame {
 }
