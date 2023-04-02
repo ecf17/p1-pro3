@@ -1,14 +1,25 @@
 package org.p1;
 
+import javax.naming.ldap.Control;
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Vista extends JFrame {
+public class Vista extends JFrame implements ActionListener {
 
+    private Modelo modelo;
+    private Controlador controlador;
     private JMenuBar menuBar;
     private JMenu menuArchivo, menuArreglo;
     private JMenuItem itemReset, itemSalir, itemArrAgregar, itemArrEliminar, itemArrAzar, itemArrOrdenar;
 
-    public Vista(){
+    public Vista(Modelo m){
+        modelo = m;
+        controlador = new Controlador(modelo, this);
+        iniciarComponentes();
+    }
+
+    private void iniciarComponentes(){
         //Config frame
         setSize(600, 400);
         setLocationRelativeTo(null);
@@ -40,5 +51,18 @@ public class Vista extends JFrame {
         menuArreglo.add(itemArrEliminar);
         menuArreglo.add(itemArrAzar);
         menuArreglo.add(itemArrOrdenar);
+
+        itemReset.addActionListener(this);
+        itemSalir.addActionListener(this);
+        itemArrAgregar.addActionListener(this);
+        itemArrEliminar.addActionListener(this);
+        itemArrAzar.addActionListener(this);
+        itemArrOrdenar.addActionListener(this);
+    }
+
+    public void actionPerformed(ActionEvent e){
+        if(e.getSource()==itemSalir){
+            controlador.salir();
+        }
     }
 }
