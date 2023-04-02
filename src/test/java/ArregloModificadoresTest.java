@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ArregloModificadoresTest {
 
     @Test
-    void GetterDebeDevolverArreglo(){
+    void getterDebeDevolverArreglo(){
         Modelo modelo = new Modelo();
         int[] arreglo = new int[]{1,2,3,4};
         modelo.setArreglo(arreglo);
@@ -17,7 +17,7 @@ public class ArregloModificadoresTest {
     }
 
     @Test
-    void ModificarElementoArreglo(){
+    void modificarElementoArreglo(){
         Modelo modelo = new Modelo();
         modelo.setElemento(1, 10);
         modelo.setElemento(3, 16);
@@ -29,7 +29,7 @@ public class ArregloModificadoresTest {
     }
 
     @Test
-    void AgregarElementoArreglo(){
+    void agregarElementoArreglo(){
         Modelo modelo = new Modelo();
         modelo.agregarElemento(10);
         modelo.agregarElemento(11);
@@ -43,7 +43,7 @@ public class ArregloModificadoresTest {
     }
 
     @Test
-    void EliminarUltimoElementoArreglo(){
+    void eliminarUltimoElementoArreglo(){
         Modelo modelo = new Modelo();
         modelo.setElemento(99, 111);
         assertEquals(111, modelo.getElemento(99));

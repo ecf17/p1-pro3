@@ -4,7 +4,7 @@ import org.p1.Modelo;
 import org.p1.Vista;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ControladorArreglo {
+public class ControladorArregloTest {
 
     @Test
     void resetDeberiaDarArregloDeCeros(){
