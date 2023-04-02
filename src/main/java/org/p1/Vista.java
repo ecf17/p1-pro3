@@ -61,8 +61,25 @@ public class Vista extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e){
+        if(e.getSource()==itemReset){
+            controlador.reset();
+        }
         if(e.getSource()==itemSalir){
             controlador.salir();
+        }
+
+        //Metodos de arreglos
+        if(e.getSource()==itemArrAgregar){
+            controlador.arrAgregarElemento();
+        }
+        if(e.getSource()==itemArrEliminar){
+            controlador.arrEliminarElemento();
+        }
+        if(e.getSource()==itemArrAzar){
+            controlador.arrAzar();
+        }
+        if(e.getSource()==itemArrOrdenar){
+            controlador.arrOrdenar();
         }
     }
 }
