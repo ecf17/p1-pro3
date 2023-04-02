@@ -10,6 +10,10 @@ public class Controlador {
     }
 
     //Metodos para controlar menus
+    public void reset(){
+        int[] arregloVacio = new int[100];
+        modelo.setArreglo(arregloVacio);
+    }
     public void salir(){
         System.exit(0);
     }
