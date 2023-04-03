@@ -4,6 +4,9 @@ package org.p1;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
+
 public class Controlador {
     private static Logger logger = LogManager.getLogger();
     private Modelo modelo;
@@ -11,13 +14,18 @@ public class Controlador {
     public Controlador(Modelo m, Vista v){
         modelo = m;
         vista = v;
+        Panel panel = new Panel(modelo.getArreglo());
+        modelo.addObserver(panel);
     }
 
     //Metodos para controlar menus
     public void reset(){
         int[] arregloVacio = new int[100];
-        modelo.setContador(0);
         modelo.setArreglo(arregloVacio);
+        /*
+        * for (int i = 0; i < arregloVacio.length; i++) {
+            System.out.println(modelo.getElemento(i));
+        }*/
     }
     public void salir(){
         System.exit(0);
@@ -45,4 +53,6 @@ public class Controlador {
         Vista vista = new Vista(modelo);
         vista.setVisible(true);
     }
-}
+
+
+ }

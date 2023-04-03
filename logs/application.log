@@ -51,3 +51,163 @@
 2023-04-02 18:14:41 DEBUG (Controlador.java:42) Numeros ordenados
 2023-04-02 18:14:48 DEBUG (Controlador.java:42) Numeros ordenados
 2023-04-02 18:15:03 DEBUG (Controlador.java:42) Numeros ordenados
+2023-04-02 19:14:57 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:15:32 DEBUG (Controlador.java:42) Numeros ordenados
+2023-04-02 19:15:47 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:17:53 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:18:00 DEBUG (Controlador.java:42) Numeros ordenados
+2023-04-02 19:19:50 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:20:51 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:21:54 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:24:03 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:24:19 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:30:55 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:33:06 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:34:06 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:34:12 DEBUG (Controlador.java:42) Numeros ordenados
+2023-04-02 19:35:13 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:35:15 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:35:16 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:35:17 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:35:19 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:35:20 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:37:10 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:37:29 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:38:59 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:39:25 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:39:53 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:40:53 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:41:09 DEBUG (Controlador.java:42) Numeros ordenados
+2023-04-02 19:45:36 DEBUG (Controlador.java:42) Numeros ordenados
+2023-04-02 19:45:37 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:46:02 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:46:19 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:47:40 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:48:00 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:48:02 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:48:04 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:48:05 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:48:06 DEBUG (Controlador.java:42) Numeros ordenados
+2023-04-02 19:48:44 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:48:52 DEBUG (Controlador.java:42) Numeros ordenados
+2023-04-02 19:49:16 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:51:18 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:51:27 DEBUG (Controlador.java:42) Numeros ordenados
+2023-04-02 19:51:31 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:51:33 DEBUG (Controlador.java:42) Numeros ordenados
+2023-04-02 19:51:43 DEBUG (Controlador.java:42) Numeros ordenados
+2023-04-02 19:51:46 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:51:58 DEBUG (Controlador.java:42) Numeros ordenados
+2023-04-02 19:52:13 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:52:15 DEBUG (Controlador.java:42) Numeros ordenados
+2023-04-02 19:52:38 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:52:40 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:52:42 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:52:44 DEBUG (Controlador.java:42) Numeros ordenados
+2023-04-02 19:55:32 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:55:38 DEBUG (Controlador.java:42) Numeros ordenados
+2023-04-02 19:55:48 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 19:55:57 DEBUG (Controlador.java:42) Numeros ordenados
+2023-04-02 19:56:34 DEBUG (Modelo.java:73) Rellenado al azar
+2023-04-02 20:02:10 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 20:03:24 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 20:03:25 DEBUG (Controlador.java:22) Arreglo reseteado
+2023-04-02 20:04:12 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 20:04:13 DEBUG (Controlador.java:26) Arreglo reseteado
+2023-04-02 20:04:58 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 20:04:59 DEBUG (Controlador.java:26) Arreglo reseteado
+2023-04-02 20:05:00 DEBUG (Controlador.java:26) Arreglo reseteado
+2023-04-02 20:05:01 DEBUG (Controlador.java:26) Arreglo reseteado
+2023-04-02 20:11:01 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 20:11:02 DEBUG (Controlador.java:26) Arreglo reseteado
+2023-04-02 20:11:03 DEBUG (Controlador.java:26) Arreglo reseteado
+2023-04-02 20:11:04 DEBUG (Controlador.java:26) Arreglo reseteado
+2023-04-02 20:11:33 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 20:11:34 DEBUG (Controlador.java:26) Arreglo reseteado
+2023-04-02 20:20:43 DEBUG (Modelo.java:82) Rellenado al azar
+2023-04-02 20:20:44 DEBUG (Controlador.java:25) Arreglo reseteado
+2023-04-02 20:20:45 DEBUG (Controlador.java:25) Arreglo reseteado
+2023-04-02 20:20:54 DEBUG (Controlador.java:25) Arreglo reseteado
+2023-04-02 20:35:53 DEBUG (Modelo.java:84) Rellenado al azar
+2023-04-02 20:35:54 DEBUG (Controlador.java:25) Arreglo reseteado
+2023-04-02 20:35:55 DEBUG (Controlador.java:25) Arreglo reseteado
+2023-04-02 20:37:59 DEBUG (Modelo.java:84) Rellenado al azar
+2023-04-02 20:38:00 DEBUG (Controlador.java:25) Arreglo reseteado
+2023-04-02 20:38:00 DEBUG (Controlador.java:25) Arreglo reseteado
+2023-04-02 20:42:13 DEBUG (Modelo.java:84) Rellenado al azar
+2023-04-02 20:42:15 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 20:42:18 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 20:42:19 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 20:43:02 DEBUG (Modelo.java:84) Rellenado al azar
+2023-04-02 20:43:03 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 20:43:06 DEBUG (Modelo.java:84) Rellenado al azar
+2023-04-02 20:43:08 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 20:55:19 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 20:55:20 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 20:55:21 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 20:55:23 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 20:55:24 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 20:55:25 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 20:55:26 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 20:55:27 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 20:55:28 DEBUG (Controlador.java:52) Numeros ordenados
+2023-04-02 20:55:54 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 20:55:55 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 20:55:56 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 20:55:57 DEBUG (Controlador.java:52) Numeros ordenados
+2023-04-02 20:55:59 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 20:56:00 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 20:56:02 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 20:56:03 DEBUG (Controlador.java:52) Numeros ordenados
+2023-04-02 20:56:05 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 20:56:05 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 21:33:55 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 21:33:56 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 21:33:57 DEBUG (Controlador.java:52) Numeros ordenados
+2023-04-02 21:34:25 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 21:34:26 DEBUG (Panel.java:51) repintar
+2023-04-02 21:34:26 DEBUG (Panel.java:51) repintar
+2023-04-02 21:34:26 DEBUG (Panel.java:51) repintar
+2023-04-02 21:34:26 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 21:34:27 DEBUG (Controlador.java:52) Numeros ordenados
+2023-04-02 21:34:28 DEBUG (Controlador.java:52) Numeros ordenados
+2023-04-02 21:34:29 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 21:34:31 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 21:39:44 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 21:39:45 DEBUG (Panel.java:49) repintar
+2023-04-02 21:39:45 DEBUG (Panel.java:49) repintar
+2023-04-02 21:39:45 DEBUG (Panel.java:49) repintar
+2023-04-02 21:39:45 DEBUG (Panel.java:49) repintar
+2023-04-02 21:39:45 DEBUG (Panel.java:49) repintar
+2023-04-02 21:39:45 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 21:39:47 DEBUG (Panel.java:49) repintar
+2023-04-02 21:39:47 DEBUG (Panel.java:49) repintar
+2023-04-02 21:39:47 DEBUG (Panel.java:49) repintar
+2023-04-02 21:39:47 DEBUG (Panel.java:49) repintar
+2023-04-02 21:39:47 DEBUG (Panel.java:49) repintar
+2023-04-02 21:39:47 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 21:39:48 DEBUG (Panel.java:49) repintar
+2023-04-02 21:39:48 DEBUG (Panel.java:49) repintar
+2023-04-02 21:39:48 DEBUG (Panel.java:49) repintar
+2023-04-02 21:39:48 DEBUG (Panel.java:49) repintar
+2023-04-02 21:39:48 DEBUG (Panel.java:49) repintar
+2023-04-02 21:39:48 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 21:39:50 DEBUG (Controlador.java:52) Numeros ordenados
+2023-04-02 21:39:57 DEBUG (Modelo.java:81) Rellenado al azar
+2023-04-02 21:40:00 DEBUG (Controlador.java:52) Numeros ordenados
+2023-04-02 21:42:07 DEBUG (Panel.java:51) repintar
+2023-04-02 21:42:07 DEBUG (Panel.java:51) repintar
+2023-04-02 21:42:07 DEBUG (Panel.java:51) repintar
+2023-04-02 21:42:07 DEBUG (Panel.java:51) repintar
+2023-04-02 21:42:07 DEBUG (Panel.java:51) repintar
+2023-04-02 21:42:07 DEBUG (Controlador.java:30) Arreglo reseteado
+2023-04-02 21:43:32 DEBUG (Panel.java:51) repintar
+2023-04-02 21:43:32 DEBUG (Panel.java:51) repintar
+2023-04-02 21:43:32 DEBUG (Panel.java:51) repintar
+2023-04-02 21:43:32 DEBUG (Panel.java:51) repintar
+2023-04-02 21:43:32 DEBUG (Panel.java:51) repintar
+2023-04-02 21:44:23 DEBUG (Panel.java:48) repintar
+2023-04-02 21:44:23 DEBUG (Panel.java:48) repintar
+2023-04-02 21:44:23 DEBUG (Panel.java:48) repintar
+2023-04-02 21:44:23 DEBUG (Panel.java:48) repintar
+2023-04-02 21:44:23 DEBUG (Panel.java:48) repintar

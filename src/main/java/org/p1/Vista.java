@@ -1,22 +1,28 @@
 package org.p1;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import javax.naming.ldap.Control;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Vista extends JFrame implements ActionListener {
-
+public class Vista extends JFrame implements ActionListener{
     private Modelo modelo;
     private Controlador controlador;
     private JMenuBar menuBar;
     private JMenu menuArchivo, menuArreglo;
     private JMenuItem itemReset, itemSalir, itemArrAgregar, itemArrEliminar, itemArrAzar, itemArrOrdenar;
 
+    private Panel panelBarras;
+
     public Vista(Modelo m){
         modelo = m;
         controlador = new Controlador(modelo, this);
         iniciarComponentes();
+        m.addObserver(panelBarras);
     }
 
     private void iniciarComponentes(){
@@ -58,6 +64,9 @@ public class Vista extends JFrame implements ActionListener {
         itemArrEliminar.addActionListener(this);
         itemArrAzar.addActionListener(this);
         itemArrOrdenar.addActionListener(this);
+
+        panelBarras = new Panel(modelo.getArreglo());
+        add(panelBarras, BorderLayout.CENTER);
     }
 
     public void actionPerformed(ActionEvent e){
@@ -82,4 +91,5 @@ public class Vista extends JFrame implements ActionListener {
             controlador.arrOrdenar();
         }
     }
+
 }

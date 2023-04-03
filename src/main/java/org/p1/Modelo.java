@@ -3,14 +3,20 @@ package org.p1;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
+
 public class Modelo {
     private static Logger logger = LogManager.getLogger();
     private int[] arreglo;
     private int contador;
 
+    private PropertyChangeSupport observado;
+
     public Modelo(){
         arreglo = new int[100];
         contador = 0;
+        observado = new PropertyChangeSupport(this);
     }
 
     //Metodos para modificar arreglo
@@ -23,7 +29,9 @@ public class Modelo {
     }
     public void setArreglo(int[] arreglo) {
         this.arreglo = arreglo;
+        observado.firePropertyChange("Set arreglo",true, false);
     }
+    public void addObserver(PropertyChangeListener o) {observado.addPropertyChangeListener(o);}
 
     public void setElemento(int posicion, int valor){
         arreglo[posicion] = valor;
@@ -49,6 +57,7 @@ public class Modelo {
             if(arreglo[i] == 0){
                 arreglo[i] = valor;
                 fueAgregado = true;
+                observado.firePropertyChange("Agregar",true, false);
                 break;
             }
         }
