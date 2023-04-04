@@ -1,28 +1,28 @@
 package org.p1;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import javax.naming.ldap.Control;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.util.Arrays;
 
-public class Vista extends JFrame implements ActionListener{
+public class Vista extends JFrame implements ActionListener, PropertyChangeListener {
     private Modelo modelo;
     private Controlador controlador;
     private JMenuBar menuBar;
     private JMenu menuArchivo, menuArreglo;
     private JMenuItem itemReset, itemSalir, itemArrAgregar, itemArrEliminar, itemArrAzar, itemArrOrdenar;
-
     private Panel panelBarras;
+    private PopupAgregar popupAgregar;
 
     public Vista(Modelo m){
         modelo = m;
         controlador = new Controlador(modelo, this);
         iniciarComponentes();
-        m.addObserver(panelBarras);
+        modelo.addObserver(this);
+        popupAgregar = new PopupAgregar(this, m);
     }
 
     private void iniciarComponentes(){
@@ -72,6 +72,7 @@ public class Vista extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e){
         if(e.getSource()==itemReset){
             controlador.reset();
+
         }
         if(e.getSource()==itemSalir){
             controlador.salir();
@@ -79,7 +80,7 @@ public class Vista extends JFrame implements ActionListener{
 
         //Metodos de arreglos
         if(e.getSource()==itemArrAgregar){
-            controlador.arrAgregarElemento();
+            popupAgregar.setVisible(true);
         }
         if(e.getSource()==itemArrEliminar){
             controlador.arrEliminarElemento();
@@ -91,5 +92,23 @@ public class Vista extends JFrame implements ActionListener{
             controlador.arrOrdenar();
         }
     }
+    public void actualizarPantallas() {
+        this.revalidate();
+        this.repaint();
 
+        System.out.println("Arreglo en modelo: " + Arrays.toString(modelo.getArreglo()));
+        panelBarras.actualizarPanel();
+        System.out.println("Arreglo en panel: " + Arrays.toString(panelBarras.getArreglo()));
+    }
+    @Override
+    public void propertyChange(PropertyChangeEvent evt) {
+        if (evt.getPropertyName().equals("nuevoArreglo")) {
+            panelBarras = new Panel(modelo.getArreglo());
+            actualizarPantallas();
+            System.out.println("Repintando");
+        }
+        if (evt.getPropertyName().equals("agregar")) {
+            actualizarPantallas();
+        }
+    }
 }
