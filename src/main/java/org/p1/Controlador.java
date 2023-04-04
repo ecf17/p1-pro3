@@ -14,30 +14,19 @@ public class Controlador {
     public Controlador(Modelo m, Vista v){
         modelo = m;
         vista = v;
-        Panel panel = new Panel(modelo.getArreglo());
-        modelo.addObserver(panel);
     }
 
     //Metodos para controlar menus
     public void reset(){
-        int[] arregloVacio = new int[100];
-        modelo.setArreglo(arregloVacio);
-        /*
-        * for (int i = 0; i < arregloVacio.length; i++) {
-            System.out.println(modelo.getElemento(i));
-        }*/
+        modelo.setArreglo(new int[100]);
+        System.out.println("Reset controlador");
+        logger.debug("Reset de controlador");
     }
     public void salir(){
         System.exit(0);
     }
-    public void arrAgregarElemento(){
-        modelo.agregarElemento(10);
-        modelo.agregarElemento(102);
-        modelo.agregarElemento(1123);
-        modelo.agregarElemento(123);
-        modelo.agregarElemento(12);
-        modelo.agregarElemento(13);
-        modelo.agregarElemento(14);
+    public void arrAgregarElemento(int v){
+        modelo.agregarElementoAlArreglo(v);
     }
     public void arrEliminarElemento(){
         modelo.eliminarUltimoElemento();
