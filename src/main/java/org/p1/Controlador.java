@@ -1,12 +1,6 @@
 package org.p1;
-
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeSupport;
-
 public class Controlador {
     private static Logger logger = LogManager.getLogger();
     private Modelo modelo;
@@ -42,6 +36,4 @@ public class Controlador {
         Vista vista = new Vista(modelo);
         vista.setVisible(true);
     }
-
-
  }

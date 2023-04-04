@@ -108,8 +108,9 @@ public class Vista extends JFrame implements ActionListener, PropertyChangeListe
             actualizarPantallas();
             System.out.println("Repintando");
         }
-        if (evt.getPropertyName().equals("agregar")) {
+        if (evt.getPropertyName().equals("ordenarArreglo") || evt.getPropertyName().equals("agregar")|| evt.getPropertyName().equals("eliminadoElemento")) {
             actualizarPantallas();
         }
+
     }
 }

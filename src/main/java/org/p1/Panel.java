@@ -32,7 +32,7 @@ public class Panel extends JPanel{
             int altura = (datos[i] * alturaDisponible) / datos.length; // altura de la barra
             int x = (i * getWidth()) / datos.length; // posición x de la barra
             int y = alturaDisponible - altura; // posición y de la barra
-            g.setColor(Color.BLACK); // color de la barra
+            g.setColor(new Color(128, 0, 128)); // color de la barra
             g.fillRect(x, y, anchoDisponible, altura); // dibujar la barra
         }
         this.repaint();
@@ -42,7 +42,6 @@ public class Panel extends JPanel{
         int alturaDisponible = getHeight();
         return new Dimension(anchoDisponible, alturaDisponible);
     }
-
     public void actualizarPanel(){
         this.revalidate();
         this.repaint();

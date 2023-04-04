@@ -24,26 +24,32 @@ public class Modelo {
 
     //Metodos para modificar arreglo
     public int[] getArreglo() {
+        logger.debug("Obteniendo el arreglo: " + Arrays.toString(arreglo));
         return arreglo;
     }
 
     public int getElemento(int posicion){
+        logger.debug("Obteniendo el elemento " + posicion + " con valor "+arreglo[posicion]);
         return arreglo[posicion];
     }
     public void setArreglo(int[] arregloNuevo) {
+        logger.debug("Colocando el valor del arreglo a " + Arrays.toString(arregloNuevo));
         this.arreglo = arregloNuevo;
         observado.firePropertyChange("nuevoArreglo",null, arregloNuevo);
     }
 
     public void setElemento(int posicion, int valor){
+        logger.debug("Colocando el elemento " + posicion + " con valor "+ valor);
         arreglo[posicion] = valor;
     }
 
     public void setContador(int contador) {
+        logger.debug("Colocando el valor del contador en: " + contador);
         this.contador = contador;
     }
 
     public void contadorElementos(int[] arr){
+        logger.debug("Contando los valores dentro del array");
         int numeros = 0;
         for (int i = 0; i < arr.length; i++) {
             if(arr[i] > 0){
@@ -54,6 +60,7 @@ public class Modelo {
     }
 
     public void agregarElementoAlArreglo(int valor) throws ArrayIndexOutOfBoundsException{
+        logger.debug("Agregando el elemento con valor " + valor + " a la ultima posicion del array");
         boolean fueAgregado = false;
         for (int i = 0; i < arreglo.length; i++) {
             if(arreglo[i] == 0){
@@ -69,12 +76,14 @@ public class Modelo {
         contadorElementos(arreglo);
     }
     public void eliminarUltimoElemento() throws ArrayIndexOutOfBoundsException{
+        logger.debug("Eliminando el ultimo elemento del array");
         if(contador > 0){
             arreglo[contador-1] = 0;
             contadorElementos(arreglo);
         }else{
             throw new ArrayIndexOutOfBoundsException("El arreglo no tiene menos posiciones");
         }
+        observado.firePropertyChange("eliminadoElemento",null, arreglo);
     }
     public void arregloAzar(){
         rellenarArreglo(arreglo);
@@ -93,8 +102,10 @@ public class Modelo {
         }
     public void arregloOrdenar(){
         ordenarInsercion(arreglo);
+        observado.firePropertyChange("ordenarArreglo", true, false);
     }
         public void ordenarInsercion(int[] arr) {
+            logger.debug("Ordenando el array");
             //Empieza desde el segundo elemento porque el primero esta ordenado
             for (int i = 1; i < contador; i++) {
                 int valorComparar = arr[i];
@@ -108,9 +119,5 @@ public class Modelo {
                 //Inserta el elemento actual en la posicion correcta
                 arr[j + 1] = valorComparar;
             }
-
-            System.out.println("============================ORDENADO");
-            System.out.println(Arrays.toString(arreglo));
-
         }
 }
