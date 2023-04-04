@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
+import java.util.Arrays;
 
 public class Modelo {
     private static Logger logger = LogManager.getLogger();
@@ -19,6 +20,8 @@ public class Modelo {
         observado = new PropertyChangeSupport(this);
     }
 
+    public void addObserver(PropertyChangeListener o) {observado.addPropertyChangeListener(o);}
+
     //Metodos para modificar arreglo
     public int[] getArreglo() {
         return arreglo;
@@ -27,11 +30,10 @@ public class Modelo {
     public int getElemento(int posicion){
         return arreglo[posicion];
     }
-    public void setArreglo(int[] arreglo) {
-        this.arreglo = arreglo;
-        observado.firePropertyChange("Set arreglo",true, false);
+    public void setArreglo(int[] arregloNuevo) {
+        this.arreglo = arregloNuevo;
+        observado.firePropertyChange("nuevoArreglo",null, arregloNuevo);
     }
-    public void addObserver(PropertyChangeListener o) {observado.addPropertyChangeListener(o);}
 
     public void setElemento(int posicion, int valor){
         arreglo[posicion] = valor;
@@ -51,13 +53,13 @@ public class Modelo {
         setContador(numeros);
     }
 
-    public void agregarElemento(int valor) throws ArrayIndexOutOfBoundsException{
+    public void agregarElementoAlArreglo(int valor) throws ArrayIndexOutOfBoundsException{
         boolean fueAgregado = false;
         for (int i = 0; i < arreglo.length; i++) {
             if(arreglo[i] == 0){
                 arreglo[i] = valor;
                 fueAgregado = true;
-                observado.firePropertyChange("Agregar",true, false);
+                observado.firePropertyChange("agregar",true, false);
                 break;
             }
         }
@@ -83,8 +85,8 @@ public class Modelo {
             System.out.println("AZAR================");
             for (int i = 0; i < arr.length; i++) {
                 arr[i] = numeroRandom();
-                System.out.println(arr[i]);
             }
+            System.out.println(Arrays.toString(arreglo));
         }
         public int numeroRandom(){
             return (int)(Math.random() * 100) + 1;
@@ -106,9 +108,9 @@ public class Modelo {
                 //Inserta el elemento actual en la posicion correcta
                 arr[j + 1] = valorComparar;
             }
+
             System.out.println("============================ORDENADO");
-            for (int i = 0; i < arr.length; i++) {
-                System.out.println(arr[i]);
-            }
+            System.out.println(Arrays.toString(arreglo));
+
         }
 }
