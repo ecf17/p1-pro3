@@ -4,31 +4,28 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 
-public class Panel extends JPanel implements PropertyChangeListener {
+public class Panel extends JPanel{
     private static Logger logger = LogManager.getLogger();
     private int[] datos;
+    private Modelo modelo;
+
+    public int[] getArreglo(){
+        return datos;
+    }
 
     public Panel(int[] arr){
+        modelo = new Modelo();
         datos = arr;
-        iniciarComponentes();
-    }
-
-    private void iniciarComponentes(){
         setPreferredSize(new Dimension(600, 200));
-        Border border = BorderFactory.createLineBorder(Color.BLACK);
-        setBorder(border);
     }
-
     public void paintComponent(Graphics g){
         super.paintComponent(g);
         // ancho de cada barra
-        int anchoDisponible = getWidth() / datos.length - 1;
-        int alturaDisponible = getHeight();
+        Dimension dimensionDisponible = obtenerDimensiones();
+        int anchoDisponible = dimensionDisponible.width;
+        int alturaDisponible = dimensionDisponible.height;
 
         // Dibujar cada barra
         for (int i = 0; i < datos.length; i++) {
@@ -40,11 +37,14 @@ public class Panel extends JPanel implements PropertyChangeListener {
         }
         this.repaint();
     }
+    public Dimension obtenerDimensiones(){
+        int anchoDisponible = getWidth() / datos.length - 1;
+        int alturaDisponible = getHeight();
+        return new Dimension(anchoDisponible, alturaDisponible);
+    }
 
-    @Override
-    public void propertyChange(PropertyChangeEvent evt) {
+    public void actualizarPanel(){
+        this.revalidate();
         this.repaint();
-        System.out.println("REPINTADO");
-        logger.debug("repintar");
     }
 }
