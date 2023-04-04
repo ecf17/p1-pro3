@@ -104,6 +104,7 @@ public class Vista extends JFrame implements ActionListener, PropertyChangeListe
     public void propertyChange(PropertyChangeEvent evt) {
         if (evt.getPropertyName().equals("nuevoArreglo")) {
             panelBarras = new Panel(modelo.getArreglo());
+            setContentPane(panelBarras);
             actualizarPantallas();
             System.out.println("Repintando");
         }

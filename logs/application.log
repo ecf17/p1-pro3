@@ -418,3 +418,8 @@
 2023-04-03 21:58:23 DEBUG (Controlador.java:23) Reset de controlador
 2023-04-03 21:58:24 DEBUG (Controlador.java:23) Reset de controlador
 2023-04-03 21:58:25 DEBUG (Controlador.java:39) Numeros ordenados
+2023-04-03 22:15:10 DEBUG (Modelo.java:84) Rellenado al azar
+2023-04-03 22:15:11 DEBUG (Controlador.java:23) Reset de controlador
+2023-04-03 22:15:12 DEBUG (Modelo.java:84) Rellenado al azar
+2023-04-03 22:15:16 DEBUG (Controlador.java:39) Numeros ordenados
+2023-04-03 22:15:17 DEBUG (Modelo.java:84) Rellenado al azar
