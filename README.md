@@ -2,7 +2,6 @@
 Primer práctico programación III. Por Gustavo Ramírez y Erick Cuellar
 ![Captura de pantalla 2023-04-03 225600](https://user-images.githubusercontent.com/118782394/229675375-68810341-898b-41b8-8962-325f35835d1e.png)
 ![Captura de pantalla 2023-04-03 225620](https://user-images.githubusercontent.com/118782394/229675389-8474dc35-8968-40b4-8a01-032f6675507d.png)
-![Captura de pantalla 2023-04-03 225656](https://user-images.githubusercontent.com/118782394/229675399-e67451ec-22c8-4b32-b5d8-06cfe8e807e4.png)
 
 # Práctico 1 - Primeros pasos con observer
 
